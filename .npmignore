@@ -1,0 +1,4 @@
+/*
+!/dist/**/*.js
+!/src/**/*.js
+*.test.js
