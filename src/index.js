@@ -3,7 +3,7 @@ export default function mergeRefs(refs) {
     refs.forEach(ref => {
       if (typeof ref === 'function') {
         ref(value)
-      } else if (ref !== null && ref !== undefined) {
+      } else if (ref != null) {
         ref.current = value
       }
     })
