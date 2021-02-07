@@ -18,7 +18,7 @@
     "url": "https://github.com/sponsors/gregberge"
   },
   "scripts": {
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm run build",
     "release": "standard-version && conventional-github-releaser --preset angular",
     "start": "tsdx watch",
     "test": "tsdx test",

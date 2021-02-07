@@ -26,28 +26,20 @@ _Before_ submitting a pull request, please make sure the following is done…
 
     Note: Replace `<your_username>` with your GitHub username
 
-2.  This project uses [Yarn](https://code.fb.com/web/yarn-a-new-package-manager-for-javascript/) for running development scripts. If you haven't already done so, please [install yarn](https://yarnpkg.com/en/docs/install).
-
-3.  Run `yarn install`. On Windows: To install [Yarn](https://yarnpkg.com/en/docs/install#windows-tab) on Windows you may need to download either node.js or Chocolatey<br />
+2.  Run `npm install`
 
     ```sh
-    yarn install
+    npmi install
     ```
 
-    To check your version of Yarn and ensure it's installed you can type:
+3.  If you've added code that should be tested, add tests.
 
-    ```sh
-    yarn --version
-    ```
+4.  If you've changed APIs, update the documentation.
 
-4.  If you've added code that should be tested, add tests.
-
-5.  If you've changed APIs, update the documentation.
-
-6.  Ensure the test suite passes via `yarn test`.
+5.  Ensure the test suite passes via `npm run test`.
 
     ```sh-session
-    $ yarn test
+    $ npm run test
     ```
 
 ## Bugs
