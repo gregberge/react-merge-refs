@@ -29,7 +29,7 @@ _Before_ submitting a pull request, please make sure the following is done…
 2.  Run `npm install`
 
     ```sh
-    npmi install
+    npm install
     ```
 
 3.  If you've added code that should be tested, add tests.
