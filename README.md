@@ -1,9 +1,6 @@
 # react-merge-refs
 
-[![License](https://img.shields.io/npm/l/react-merge-refs.svg)](https://github.com/gregberge/react-merge-refs/blob/master/LICENSE)
-[![npm package](https://img.shields.io/npm/v/react-merge-refs/latest.svg)](https://www.npmjs.com/package/react-merge-refs)
-[![Build Status](https://img.shields.io/travis/gregberge/react-merge-refs.svg)](https://travis-ci.org/gregberge/react-merge-refs)
-[![DevDependencies](https://img.shields.io/david/dev/gregberge/react-merge-refs.svg)](https://david-dm.org/gregberge/react-merge-refs?type=dev)
+![Node.js CI](https://github.com/gregberge/react-merge-refs/workflows/Node.js%20CI/badge.svg)
 
 React utility to merge refs 🖇
 
