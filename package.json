@@ -9,9 +9,9 @@
   "version": "1.1.0",
   "author": "Greg Bergé <berge.greg@gmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/react-merge-refs.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "repository": "github:gregberge/react-merge-refs",
   "funding": {
     "type": "github",
@@ -22,7 +22,7 @@
     "release": "standard-version && conventional-github-releaser --preset angular",
     "start": "tsdx watch",
     "test": "tsdx test",
-    "build": "tsdx build"
+    "build": "tsdx build --format cjs"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.5",
