@@ -12,7 +12,7 @@ npm install react-merge-refs
 
 ```js
 import React from "react";
-import mergeRefs from "react-merge-refs";
+import { mergeRefs } from "react-merge-refs";
 
 const Example = React.forwardRef(function Example(props, ref) {
   const localRef = React.useRef();
