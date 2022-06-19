@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/gregberge/react-merge-refs/compare/v1.1.0...v2.0.0) (2022-06-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* The package now exports ESM only and a named export.
+
+**Before:**
+
+```js
+import mergeRefs from "react-merge-refs";
+```
+
+**After:**
+
+```js
+import { mergeRefs } from "react-merge-refs";
+```
+
+### Features
+
+* ESM only & named export ([a928d61](https://github.com/gregberge/react-merge-refs/commit/a928d615336db847d90dbc303371ece8a2fb37f6))
+
+
+### Bug Fixes
+
+* fix incorrect CJS / ESM distribution ([#17](https://github.com/gregberge/react-merge-refs/issues/17)) ([048c4ea](https://github.com/gregberge/react-merge-refs/commit/048c4eaee5dd2b9d3b0d63a2c86cb5145ec81349))
+
 ## [1.1.0](https://github.com/gregberge/react-merge-refs/compare/v1.0.0...v1.1.0) (2020-07-27)
 
 
