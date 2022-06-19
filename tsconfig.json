@@ -1,8 +1,9 @@
 {
-  "include": ["src", "types"],
+  "include": ["src"],
   "compilerOptions": {
-    "module": "esnext",
+    "module": "ES2022",
     "lib": ["dom", "esnext"],
+    "target": "ES2022",
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
@@ -13,11 +14,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    },
-    "jsx": "react",
-    "esModuleInterop": true
+    "jsx": "react"
   }
 }

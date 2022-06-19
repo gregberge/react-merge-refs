@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
-import mergeRefs from ".";
+import { mergeRefs } from ".";
 
 test("mergeRefs", () => {
   const Dummy = React.forwardRef(function Dummy(_, ref) {
