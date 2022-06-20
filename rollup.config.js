@@ -30,4 +30,14 @@ export default [
       format: "es",
     },
   }),
+  bundle({
+    plugins: [esbuild(esbuildConfig)],
+    output: [
+      {
+        file: `dist/index.cjs`,
+        format: "cjs",
+        sourcemap: true,
+      },
+    ],
+  }),
 ];
