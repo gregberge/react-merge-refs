@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/gregberge/react-merge-refs/compare/v2.0.0...v2.0.1) (2022-06-27)
+
+
+### Bug Fixes
+
+* **esm:** add default export to maximize compat ([8189083](https://github.com/gregberge/react-merge-refs/commit/8189083acaf7af0128d29620ec11b7d17ab1df91)), closes [#27](https://github.com/gregberge/react-merge-refs/issues/27)
+
 ## [2.0.0](https://github.com/gregberge/react-merge-refs/compare/v1.1.0...v2.0.0) (2022-06-19)
 
 
