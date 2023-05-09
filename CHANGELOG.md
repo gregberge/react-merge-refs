@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/gregberge/react-merge-refs/compare/v2.0.1...v2.0.2) (2023-05-09)
+
+
+### Bug Fixes
+
+* move `types` condition to the front ([#30](https://github.com/gregberge/react-merge-refs/issues/30)) ([c91c4e4](https://github.com/gregberge/react-merge-refs/commit/c91c4e4fadb35b8994b740ee4198e8bbf162f7ea))
+
 ### [2.0.1](https://github.com/gregberge/react-merge-refs/compare/v2.0.0...v2.0.1) (2022-06-27)
 
 
