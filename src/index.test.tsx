@@ -30,7 +30,9 @@ test("mergeRefs with undefined and null refs", () => {
   const refAsFunc = jest.fn();
   const refAsObj = { current: undefined };
   const Example: React.FC<{ visible: boolean }> = ({ visible }) => {
-    return visible ? <Dummy ref={mergeRefs([null, undefined, refAsFunc, refAsObj])} /> : null;
+    return visible ? (
+      <Dummy ref={mergeRefs([null, undefined, refAsFunc, refAsObj])} />
+    ) : null;
   };
   const { rerender } = render(<Example visible />);
   expect(refAsFunc).toHaveBeenCalledTimes(1);
