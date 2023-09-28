@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/gregberge/react-merge-refs/compare/v2.0.2...v2.1.0) (2023-09-28)
+
+
+### Features
+
+* allow a ref to be undefined in the types ([#33](https://github.com/gregberge/react-merge-refs/issues/33)) ([d9079dd](https://github.com/gregberge/react-merge-refs/commit/d9079dd526e6c6ba3a6157130a69dc59fa3646fc))
+
 ### [2.0.2](https://github.com/gregberge/react-merge-refs/compare/v2.0.1...v2.0.2) (2023-05-09)
 
 
