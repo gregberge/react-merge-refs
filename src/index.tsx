@@ -1,15 +1,36 @@
 import type * as React from "react";
 
+type RefCleanup<T> = Exclude<ReturnType<React.RefCallback<T>>, void>;
+
 export function mergeRefs<T = any>(
-  refs: Array<React.MutableRefObject<T> | React.LegacyRef<T> | undefined | null>
+  refs: Array<React.Ref<T> | undefined>
 ): React.RefCallback<T> {
   return (value) => {
-    refs.forEach((ref) => {
+    const cleanups = refs.reduce((cleanups, ref) => {
       if (typeof ref === "function") {
-        ref(value);
+        const cleanup = ref(value);
+        if (typeof cleanup === "function") {
+          cleanups.push(cleanup);
+        } else {
+          // simulate previous ref cleanup behavior
+          cleanups.push(() => {
+            ref(null);
+          });
+        }
       } else if (ref != null) {
-        (ref as React.MutableRefObject<T | null>).current = value;
+        ref.current = value;
+        // simulate previous ref cleanup behavior
+        cleanups.push(() => {
+          ref.current = null;
+        });
       }
-    });
+      return cleanups;
+    }, [] as RefCleanup<T>[]);
+
+    return () => {
+      cleanups.forEach((cleanup) => {
+        cleanup();
+      });
+    };
   };
 }
