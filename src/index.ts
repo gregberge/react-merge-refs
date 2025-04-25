@@ -30,9 +30,9 @@ export const mergeRefs =
     : mergeRefsReact16;
 
 /**
- * Merges multiple refs into a single one ane memoizes the result to avoid refs execution on each render.
- * @param {RefItem<T>[]} refs List of refs to merge.
- * @returns {Ref<T>} Merged ref.
+ * Merges multiple refs into a single one and memoizes the result to avoid refs execution on each render.
+ * @param refs List of refs to merge.
+ * @returns Merged ref.
  */
 export function useMergeRefs<T>(refs: (Ref<T> | undefined)[]): Ref<T> {
   return useMemo(() => mergeRefs(refs), refs);
