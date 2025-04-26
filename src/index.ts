@@ -4,8 +4,8 @@ import { mergeRefsReact19 } from "./mergeRefsReact19";
 
 /**
  * Assigns a value to a ref.
- * @param ref - The ref to assign the value to.
- * @param value - The value to assign to the ref.
+ * @param ref The ref to assign the value to.
+ * @param value The value to assign to the ref.
  * @returns The ref cleanup callback, if any.
  */
 export function assignRef<T>(
