@@ -40,7 +40,6 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.1.2",
-    "codecov": "^3.8.3",
     "conventional-github-releaser": "^3.1.5",
     "esbuild": "^0.25.3",
     "eslint": "^9.25.1",
