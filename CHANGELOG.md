@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/gregberge/react-merge-refs/compare/v2.1.1...v3.0.0) (2025-04-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add support for React 19
+
+### Features
+
+* react 19 support ([fd7af60](https://github.com/gregberge/react-merge-refs/commit/fd7af60a7793b9d245ba307864e3b5ccd8c2681f))
+
 ### [2.1.1](https://github.com/gregberge/react-merge-refs/compare/v2.1.0...v2.1.1) (2023-09-28)
 
 ## [2.1.0](https://github.com/gregberge/react-merge-refs/compare/v2.0.2...v2.1.0) (2023-09-28)
