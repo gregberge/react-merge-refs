@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Ref, RefCallback, useMemo, version } from "react";
 import { mergeRefsReact16 } from "./mergeRefsReact16";
 import { mergeRefsReact19 } from "./mergeRefsReact19";
@@ -25,7 +26,7 @@ export function assignRef<T>(
  * @returns Merged ref.
  */
 export const mergeRefs =
-  parseInt(version.split(".")[0], 10) >= 19
+  parseInt(version.split(".")[0]!, 10) >= 19
     ? mergeRefsReact19
     : mergeRefsReact16;
 

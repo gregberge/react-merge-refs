@@ -1,5 +1,10 @@
+/**
+ * @vitest-environment happy-dom
+ */
+
 import * as React from "react";
 import { render } from "@testing-library/react";
+import { test, expect, vi } from "vitest";
 import { mergeRefs } from ".";
 import { mergeRefsReact16 } from "./mergeRefsReact16";
 
@@ -8,7 +13,7 @@ test("mergeRefs React 16+", () => {
     React.useImperativeHandle(ref, () => "refValue");
     return null;
   });
-  const refAsFunc = jest.fn();
+  const refAsFunc = vi.fn();
   const refAsObj = { current: undefined };
   const Example: React.FC<{ visible: boolean }> = ({ visible }) => {
     return visible ? (
@@ -31,12 +36,12 @@ test("mergeRefs React 19+", () => {
     return null;
   });
 
-  const refAsFunc = jest.fn();
+  const refAsFunc = vi.fn();
 
   const refAsObj = { current: undefined };
 
-  const refCleanup = jest.fn();
-  const refAsFuncWithCleanup = jest.fn(() => refCleanup);
+  const refCleanup = vi.fn();
+  const refAsFuncWithCleanup = vi.fn(() => refCleanup);
 
   const Example: React.FC<{ visible: boolean }> = ({ visible }) => {
     return visible ? (
@@ -70,7 +75,7 @@ test("mergeRefs with undefined and null refs", () => {
     React.useImperativeHandle(ref, () => "refValue");
     return null;
   });
-  const refAsFunc = jest.fn();
+  const refAsFunc = vi.fn();
   const refAsObj = { current: undefined };
   const Example: React.FC<{ visible: boolean }> = ({ visible }) => {
     return visible ? (
