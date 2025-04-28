@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/gregberge/react-merge-refs/compare/v3.0.0...v3.0.1) (2025-04-28)
+
+
+### Bug Fixes
+
+* fix package.json file ([eb05b48](https://github.com/gregberge/react-merge-refs/commit/eb05b4852fe36b62f4e3cb789c517c421891e35e))
+
 ## [3.0.0](https://github.com/gregberge/react-merge-refs/compare/v2.1.1...v3.0.0) (2025-04-27)
 
 
