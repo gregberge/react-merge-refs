@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://github.com/gregberge/react-merge-refs/compare/v3.0.1...v3.0.2) (2025-05-08)
+
+
+### Bug Fixes
+
+* make react peer dependency optional ([7cef157](https://github.com/gregberge/react-merge-refs/commit/7cef157c74d5f4523be2521c4f46d9a181b4274f))
+
 ### [3.0.1](https://github.com/gregberge/react-merge-refs/compare/v3.0.0...v3.0.1) (2025-04-28)
 
 
